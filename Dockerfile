@@ -45,6 +45,7 @@ RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
   && rm -f /tmp/composer-setup.*
 
 COPY config.json /root/.composer/config.json
+RUN composer config github-oauth.github.com 7c4e8ff336f463bf79a786d1ca6f17dd26e87d56
 RUN composer global require "fxp/composer-asset-plugin:~1.1.0" && \
     composer update
 
