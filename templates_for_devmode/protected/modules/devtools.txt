@@ -1,0 +1,1 @@
+https://github.com/humhub/humhub-modules-devtools.git
